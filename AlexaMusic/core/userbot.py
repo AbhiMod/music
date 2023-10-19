@@ -59,7 +59,7 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("Alexa_Help")
+                await self.one.join_chat("am_ytsupport")
             except:
                 pass
             assistants.append(1)
