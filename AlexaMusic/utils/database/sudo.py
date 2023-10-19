@@ -9,7 +9,7 @@ from typing import Dict, List, Union
 
 from AlexaMusic.core.mongo import mongodb
 
-sudoersdb = db.sudoers
+sudoersdb = mongodb.sudoers
 
 
 async def get_sudoers() -> list:
