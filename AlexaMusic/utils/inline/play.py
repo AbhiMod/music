@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from config import SUPPORT_GROUP, SUPPORT_CHANNEL, CHAT
+from config import SUPPORT_GROUP, SUPPORT_CHANNEL, CHAT, OWNER_USERNAME
 import random
 
 ## After Edits with Timer Bar
@@ -46,7 +46,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
              InlineKeyboardButton(
-                text=" ᴏᴡɴᴇʀ 💞", url=f"https://t.me/AM_YTBOTT"
+                text=" ᴏᴡɴᴇʀ 💞", url=f"https://t.me/{OWNER_USERNAME}"
             ),
             InlineKeyboardButton(text=" ᴄʜᴀᴛ 💌", url=f"{CHAT}"),
         ],
@@ -77,12 +77,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-        ],
-          [
-             InlineKeyboardButton(
-                text=" ᴏᴡɴᴇʀ 💞", url=f"https://t.me/AM_YTBOTT"
-            ),
-            InlineKeyboardButton(text=" ᴄʜᴀᴛ 💌", url=f"{CHAT}"),
         ],
         [
           InlineKeyboardButton(
