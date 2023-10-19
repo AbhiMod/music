@@ -33,5 +33,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Kora
-    pymongodb = _mongo_sync_.Kora
+    mongodb = _mongo_async_.Alexa
+    pymongodb = _mongo_sync_.Alexa
