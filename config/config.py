@@ -16,6 +16,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "12227067"))
 API_HASH = getenv("API_HASH","b463bedd791aa733ae2297e6520302fe")
 CHAT = getenv("CHAT","https://t.me/AM_YTSUPPORT")
+OWNER_USERNAME = getenv("OWNER_USERNAME","AM_YTBOTT")
 BOT_TOKEN = getenv("BOT_TOKEN","5894209648:AAHHD6eCx8rDk-k624MBIC_as86Hh3zVjzQ")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://AbhiModszYT:AbhiModszYT@abhimodszyt.pom3ops.mongodb.net/?retryWrites=true&w=majority")
