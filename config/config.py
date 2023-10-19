@@ -102,23 +102,16 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/d593c6064ff7657d0c714.jpg"
-)
+    "START_IMG_URL", "https://telegra.ph/file/d593c6064ff7657d0c714.jpg")
 
 PING_IMG_URL = getenv(
-    "PING_IMG_URL",
-    "https://telegra.ph/file/d593c6064ff7657d0c714.jpg",
-)
+    "PING_IMG_URL","https://telegra.ph/file/d593c6064ff7657d0c714.jpg")
 
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL",
-    "assets/sophi.jpg",
-)
+    "PLAYLIST_IMG_URL","https://telegra.ph/file/d593c6064ff7657d0c714.jpg")
 
 GLOBAL_IMG_URL = getenv(
-    "GLOBAL_IMG_URL",
-    "assets/sophi.jpg",
-)
+    "GLOBAL_IMG_URL","https://telegra.ph/file/d593c6064ff7657d0c714.jpg")
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
