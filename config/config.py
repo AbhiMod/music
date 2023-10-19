@@ -177,7 +177,7 @@ if GITHUB_REPO:
 
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "assets/Ping.jpeg":
+    if PING_IMG_URL != "assets/Stats.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
                 "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -185,7 +185,7 @@ if PING_IMG_URL:
             sys.exit()
 
 if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
+    if PLAYLIST_IMG_URL != "assets/Stats.jpeg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -193,7 +193,7 @@ if PLAYLIST_IMG_URL:
             sys.exit()
 
 if GLOBAL_IMG_URL:
-    if GLOBAL_IMG_URL != "assets/Global.jpeg":
+    if GLOBAL_IMG_URL != "assets/Stats.jpeg":
         if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
             print(
                 "[ERROR] - Your GLOBAL_IMG_URL url is wrong. Please ensure that it starts with https://"
