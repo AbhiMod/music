@@ -26,7 +26,7 @@ SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001840241140"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "乛𝘼𝙇𝙀𝙓𝘼🕊️⃝🦋⁪⁬𝙈𝙐𝙎𝙄𝘾")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Kora")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "6204761408").split()))
 
@@ -38,7 +38,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TheTeamAlexa/AlexaMusic",
+    "https://github.com/AbhiMod/music",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
