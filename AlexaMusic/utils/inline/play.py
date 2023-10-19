@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from config import SUPPORT_GROUP, SUPPORT_CHANNEL, CHAT, OWNER_USERNAME
+from config import SUPPORT_GROUP, SUPPORT_CHANNEL
 import random
 
 ## After Edits with Timer Bar
@@ -40,7 +40,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=" ᴏᴡɴᴇʀ 💞", url=f"https://t.me/{OWNER_USERNAME}"
+                text=" ᴏᴡɴᴇʀ 💞", url=f"https://t.me/Jankari_Ki_Duniya"
             ),
         ],
         [
@@ -48,13 +48,14 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
-            InlineKeyboardButton(text=" ᴄʜᴀᴛ 💌", url=f"{CHAT}"),
+            InlineKeyboardButton(text="ᴀʟᴇxᴀ ᴄʜᴀᴛ 💌", url=f"https://t.me/Alexa_Help"),
         ],
         [
-          InlineKeyboardButton(
-              text="〆 ᴄʟᴏsᴇ 〆", callback_data="close"),
-               
-                ],
+            InlineKeyboardButton(
+                text=f"☀ ᴀʟᴇxᴀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ☀",
+                url=f"https://t.me/Alexa_ManagementBot",
+            )
+        ],
     ]
     return buttons
 
@@ -73,20 +74,15 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💞", url=f"https://t.me/{OWNER_USERNAME}"),
+            InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💞", url=f"https://t.me/Jankari_Ki_Duniya"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text=" ᴄʜᴀᴛ 💌", url=f"{CHAT}"),
+            InlineKeyboardButton(text="ᴀʟᴇxᴀ ᴄʜᴀᴛ 💌", url=f"https://t.me/Alexa_Help"),
         ],
-        [
-          InlineKeyboardButton(
-              text="〆 ᴄʟᴏsᴇ 〆", callback_data="close"),
-               
-                ],
     ]
     return buttons
 
@@ -101,18 +97,15 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
+            InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💞", url=f"https://t.me/Jankari_Ki_Duniya"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
+            InlineKeyboardButton(text="ᴀʟᴇxᴀ ᴄʜᴀᴛ 💌", url=f"https://t.me/Alexa_Help"),
         ],
-        [
-          InlineKeyboardButton(
-              text="〆 ᴄʟᴏsᴇ 〆", callback_data="close"),
-               
-                ],
     ]
     return buttons
 
