@@ -18,6 +18,7 @@ API_HASH = getenv("API_HASH")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 CHAT = getenv("CHAT")
+BOT_NAME = getenv("BOT_NAME","Kora)
 OWNER_USERNAME = getenv("OWNER_USERNAME")
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
