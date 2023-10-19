@@ -27,7 +27,8 @@ from AlexaMusic.utils.database import (
     is_cleanmode_on,
     set_queries,
     update_particular_top,
-    update_user_top)
+    update_user_top,
+)
 from AlexaMusic.utils.decorators.language import language
 from AlexaMusic.utils.formatters import alpha_to_int
 from config import OWNER_ID
@@ -68,9 +69,13 @@ async def clean_mode(client, update, users, chats):
     await set_queries(1)
 
 
-@app.on_message(filters.command(BROADCAST_COMMAND) & SUDOERS)
+@app.on_message(filters.command(BROADCAST_COMMAND))
 @language
 async def braodcast_message(client, message, _):
+    if message.from_user.id not in OWNER_ID:
+        return await message.reply_text(
+            "» **😁 ʜᴇʜᴇʜᴇ ᴏɴʟʏ ᴍʏ ᴏᴡɴᴇʀ ᴄᴀɴ ʙʀᴏᴀᴅᴄᴀsᴛ**\n» 🤫  ᴊᴏɪɴ @Alexa_Help ғᴏʀ ᴘʀᴏᴍᴏᴛɪᴏɴ"
+        )
     global IS_BROADCASTING
     if message.reply_to_message:
         x = message.reply_to_message.message_id
@@ -103,7 +108,7 @@ async def braodcast_message(client, message, _):
         for chat in schats:
             chats.append(int(chat["chat_id"]))
         for i in chats:
-            if i == -1001840241140:
+            if i == -1001733534088:
                 continue
             try:
                 m = (
@@ -167,13 +172,13 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_2"])
         text = _["broad_3"]
-        from KoraMusic.core.userbot import assistants
+        from AlexaMusic.core.userbot import assistants
 
         for num in assistants:
             sent = 0
             client = await get_client(num)
             async for dialog in client.iter_dialogs():
-                if dialog.chat.id == -1001840241140:
+                if dialog.chat.id == -1001733534088:
                     continue
                 try:
                     await client.forward_messages(
@@ -211,15 +216,11 @@ async def auto_clean():
                         spot = spot["spot"]
                         next_spot = spot + 1
                         new_spot = {"spot": next_spot, "title": title}
-                        await update_particular_top(
-                            chat_id, vidid, new_spot
-                        )
+                        await update_particular_top(chat_id, vidid, new_spot)
                     else:
                         next_spot = 1
                         new_spot = {"spot": next_spot, "title": title}
-                        await update_particular_top(
-                            chat_id, vidid, new_spot
-                        )
+                        await update_particular_top(chat_id, vidid, new_spot)
             for user_id in userstats:
                 for dic in userstats[user_id]:
                     vidid = dic["vidid"]
@@ -230,15 +231,11 @@ async def auto_clean():
                         spot = spot["spot"]
                         next_spot = spot + 1
                         new_spot = {"spot": next_spot, "title": title}
-                        await update_user_top(
-                            user_id, vidid, new_spot
-                        )
+                        await update_user_top(user_id, vidid, new_spot)
                     else:
                         next_spot = 1
                         new_spot = {"spot": next_spot, "title": title}
-                        await update_user_top(
-                            user_id, vidid, new_spot
-                        )
+                        await update_user_top(user_id, vidid, new_spot)
         except:
             continue
         try:
@@ -248,9 +245,7 @@ async def auto_clean():
                 for x in clean[chat_id]:
                     if datetime.now() > x["timer_after"]:
                         try:
-                            await app.delete_messages(
-                                chat_id, x["msg_id"]
-                            )
+                            await app.delete_messages(chat_id, x["msg_id"])
                         except FloodWait as e:
                             await asyncio.sleep(e.x)
                         except:
