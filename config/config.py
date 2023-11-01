@@ -114,7 +114,7 @@ GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL","https://graph.org/file/f45d9b5c660fda58cb83c.jpg")
 
 STATS_IMG_URL = getenv(
-    "STATS_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "STATS_IMG_URL","https://graph.org/file/f45d9b5c660fda58cb83c.jpg")
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
