@@ -105,13 +105,13 @@ START_IMG_URL = getenv(
     "START_IMG_URL", "https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
 
 PING_IMG_URL = getenv(
-    "PING_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "PING_IMG_URL","https://graph.org/file/688aaedf83b83c296bcab.jpg")
 
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "PLAYLIST_IMG_URL","https://graph.org/file/f3052b33b82773d4ec054.jpg")
 
 GLOBAL_IMG_URL = getenv(
-    "GLOBAL_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "GLOBAL_IMG_URL","https://graph.org/file/f45d9b5c660fda58cb83c.jpg")
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
@@ -132,12 +132,12 @@ YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
-    "SPOTIFY_ARTIST_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "SPOTIFY_ARTIST_IMG_URL","https://graph.org/file/4c894e0aab8e2304f77d1.jpg")
 SPOTIFY_ALBUM_IMG_URL = getenv(
-    "SPOTIFY_ALBUM_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "SPOTIFY_ALBUM_IMG_URL","https://graph.org/file/67ba34427469facafc945.jpg")
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
-    "SPOTIFY_PLAYLIST_IMG_URL","https://graph.org/file/f59d6fbce5a71a6fc1bba.jpg")
+    "SPOTIFY_PLAYLIST_IMG_URL","https://graph.org/file/72e02f86ec569b4d1e30f.jpg")
 
 
 def time_to_seconds(time):
