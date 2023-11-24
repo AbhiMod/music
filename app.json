@@ -33,6 +33,11 @@
         "value": "Morgana",
         "required": true
       },
+    "CHAT": {
+        "description": bot name",
+        "value": "https://t.me/+jCS-YsVBVEE3NjQ1",
+        "required": true
+      },
         "OWNER_USERNAME": {
         "description": bot name",
         "value": "sultan11100",
@@ -70,7 +75,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1001840241140",
+        "value": "-1001717726836",
         "required": true
       }
     },
