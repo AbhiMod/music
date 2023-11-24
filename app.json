@@ -29,22 +29,22 @@
         "required": true
       },
       "BOT_NAME": {
-        "description": bot name",
+        "description": "bot name",
         "value": "Morgana",
         "required": true
       },
     "CHAT": {
-        "description": bot name",
+        "description": "bot name",
         "value": "https://t.me/+jCS-YsVBVEE3NjQ1",
         "required": true
       },
         "OWNER_USERNAME": {
-        "description": bot name",
+        "description": "bot name",
         "value": "sultan11100",
         "required": true
       },
     "BOT_USERNAME": {
-        "description": bot name",
+        "description": "bot name",
         "value": "sultan11100",
         "required": true
       },
