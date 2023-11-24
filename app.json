@@ -28,6 +28,21 @@
         "value": "5894209648:AAHHD6eCx8rDk-k624MBIC_as86Hh3zVjzQ",
         "required": true
       },
+      "BOT_NAME": {
+        "description": bot name",
+        "value": "Morgana",
+        "required": true
+      },
+        "OWNER_USERNAME": {
+        "description": bot name",
+        "value": "sultan11100",
+        "required": true
+      },
+    "BOT_USERNAME": {
+        "description": bot name",
+        "value": "sultan11100",
+        "required": true
+      },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
         "value": "6204761408",
